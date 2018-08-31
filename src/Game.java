@@ -31,8 +31,9 @@ public class Game {
             Input();
             table1.put(col, row);
 
-            if (table1.checkWin() || turn == 9) {
-                if (!table1.checkWin()) {
+            boolean win = table1.checkWin();
+            if (!win) {
+                if (turn == 9) {
                     table1.setCountDraw(1);
                 }
                 PrintWinner();

@@ -121,4 +121,13 @@ class OXTest {
         testtable.put(0, 2);
         assertEquals(true, testtable.checkWin());
     }
+
+    @Test
+    public void resetTest() {
+        OX testtable = new OX();
+        testtable.put(2, 0);
+        testtable.put(1, 1);
+        testtable.Reset();
+        assertEquals("  0 1 2 \n0 - - - \n1 - - - \n2 - - - \n",testtable.getTableString());
+    }
 }

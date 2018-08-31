@@ -118,4 +118,13 @@ public class OX {
     public void setCountDraw(int n) {
         countDraw = countDraw + n;
     }
+
+    public void Reset() {
+        arr = new String[][]{
+                {"", "0", "1", "2"},
+                {"0", "-", "-", "-"},
+                {"1", "-", "-", "-"},
+                {"2", "-", "-", "-"}
+        };
+    }
 }
